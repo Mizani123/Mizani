@@ -1,0 +1,18 @@
+<launch>
+	
+	<!-- AprilTag3 Detection -->
+	<include file="$(find common_tello_application)/launch/apriltag_detection.launch"/>
+	
+	<!-- AprilTag3 TakeOff Land -->
+	<include file="$(find common_tello_application)/launch/apriltag_takeoff_land.launch"/>
+	
+	<!-- AprilTag3 Center -->
+	<include file="$(find common_tello_application)/launch/apriltag_center.launch"/>
+
+	<!-- Tello Pose and TF Broadcaster -->
+	<include file="$(find common_tello_application)/launch/tello_pose.launch"/>
+	
+	<!-- Tello Pose and TF Broadcaster -->
+	<!-- <include file="$(find common_tello_application)/launch/tello_tf_broadcaster.launch"/> -->
+	
+</launch>
